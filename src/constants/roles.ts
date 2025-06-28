@@ -1,0 +1,4 @@
+export enum ROLES {
+  INCUBATOR = "INCUBATOR",
+  STARTUP = "STARTUP",
+}
