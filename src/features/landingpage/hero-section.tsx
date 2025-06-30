@@ -65,7 +65,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="relative w-full h-[calc(100vh-11rem)] overflow-hidden">
+    <div className="relative w-full h-[calc(100vh-11rem)] overflow-hidden max-w-screen-2xl mx-auto">
       <AnimatePresence mode="wait">
         <motion.div
           key={selectedIndex}

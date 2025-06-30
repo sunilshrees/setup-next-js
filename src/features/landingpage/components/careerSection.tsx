@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const WelcomeSection = () => {
+const CareerSection = () => {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { amount: 0.5, once: true });
   const imageControls = useAnimation();
@@ -53,17 +53,17 @@ const WelcomeSection = () => {
 
   return (
     <div ref={containerRef} className="w-full ">
-      <div className="w-full flex items-center justify-start px-2 overflow-hidden pt-16 relative max-w-screen-xl mx-auto h-[28rem]">
+      <div className="w-full flex items-center justify-start px-2 overflow-hidden  relative max-w-screen-xl mx-auto h-[28rem]">
         <motion.div
           initial={{ width: "100%" }}
           animate={imageControls}
-          className="overflow-hidden rounded-[1.5rem] shadow-lg relative w-full h-full shrink-0"
+          className="overflow-hidden rounded-[3rem] shadow-lg relative w-full h-full shrink-0"
         >
           <Image
             src="https://images.unsplash.com/photo-1749288752527-831860baa9f0?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Welcome"
             fill
-            className="object-cover rounded-lg"
+            className="object-cover rounded-[3rem"
             priority
           />
         </motion.div>
@@ -91,4 +91,4 @@ const WelcomeSection = () => {
   );
 };
 
-export default WelcomeSection;
+export default CareerSection;
