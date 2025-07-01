@@ -2,7 +2,7 @@ import { Modal } from "@/components/modal/modal";
 import { ModalProvider } from "@/components/modal/modal-context";
 import { ConfirmationDialogProvider } from "@/providers/ConfirmationDialogContext";
 import QueryWrapper from "@/providers/queryWrapper";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Manrope } from "next/font/google";
 import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -10,7 +10,7 @@ import "./globals.css";
 import AppHydrationWrapper from "@/components/AppHydrationWrapper";
 import { Toaster } from "@/components/ui/sonner";
 
-const primary = Plus_Jakarta_Sans({
+const primary = Manrope({
   subsets: ["latin"],
   variable: "--font-primary",
   weight: ["300", "400", "500", "600", "700", "800"],

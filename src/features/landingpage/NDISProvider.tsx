@@ -5,7 +5,7 @@ export default function NDISProviderSection() {
   return (
     <div>
       <div className="max-w-screen-xl mx-auto">
-        <div className="bg-white py-12 px-4 sm:px-8 md:px-16 lg:px-24 relative overflow-hidden">
+        <div className="bg-white py-24 px-4 sm:px-8 md:px-16 lg:px-24 relative overflow-hidden">
           <div className="h-full grid grid-cols-5 gap-8">
             {/* Text Content */}
             <div className="flex-1 bg-gray-50  rounded-[3rem] p-8 col-span-4">

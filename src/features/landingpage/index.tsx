@@ -5,6 +5,7 @@ import CommunitySection from "./community";
 import ServicesSlider from "./service-section";
 import NDISProviderSection from "./NDISProvider";
 import LatestNewsSection from "./latest-news";
+import Testimonials from "./testimonials";
 
 const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage = () => {
       <ServicesSlider />
       <CommunitySection />
       <NDISProviderSection />
+      <Testimonials />
       <LatestNewsSection />
     </div>
   );

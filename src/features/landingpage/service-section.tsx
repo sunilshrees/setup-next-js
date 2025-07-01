@@ -12,6 +12,10 @@ import {
   MoveRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import SILicon from "@/assets/sil-icon.svg";
+import STAIicon from "@/assets/sta-icon.svg";
+import Clients from "@/assets/career.svg";
+import Image from "next/image";
 
 const services = [
   {
@@ -19,7 +23,7 @@ const services = [
     title: "Supported Independent Living (SIL)",
     description:
       "Personalized assistance to help individuals maintain independence and comfort within their homes.",
-    icon: Home,
+    icon: SILicon,
     isActive: true,
   },
   {
@@ -27,7 +31,7 @@ const services = [
     title: "In-Home Support & Personal Care",
     description:
       "Empowering clients through career guidance, job placement, and skill-building programs.",
-    icon: Users,
+    icon: Clients,
     isActive: false,
   },
   {
@@ -35,7 +39,7 @@ const services = [
     title: "S.T.A, and M.T.A",
     description:
       "Innovative projects that create community impact and provide opportunities for growth",
-    icon: Target,
+    icon: STAIicon,
     isActive: false,
   },
 ];
@@ -75,8 +79,9 @@ export default function ServicesSlider() {
         >
           <div className="flex items-center justify-between">
             <div className="text-left">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                <span className="text-green-600">Service</span> We Provide
+              <h2 className="text-3xl  text-primary mb-4 font-normal">
+                <span className="text-primary font-bold">Service</span> We
+                Provide
               </h2>
               <p className="text-gray-600 max-w-4xl mx-auto text-lg leading-relaxed">
                 We provides personalized services, including home support,
@@ -195,18 +200,22 @@ function ServiceCard({
         </div>
       </div>
 
-      <div className="absolute -top-[25%] -left-[18%] w-0 h-0 group-hover:w-[16rem] group-hover:h-[16rem] rounded-full bg-white transition-all duration-500 ease-in-out" />
+      <div className="absolute -top-[25%] -left-[18%] w-0 h-0 group-hover:w-[15rem] group-hover:h-[15rem] rounded-full bg-white transition-all duration-500 ease-in-out" />
 
       {/* Content */}
       <div className="relative z-10 p-8 h-full flex flex-col">
         {/* Icon */}
-        <div className="mb-6">
+        <div className={cn("mb-8", index == 1 && "mb-2")}>
           <div
-            className={`w-32 h-32 rounded-full flex items-center justify-center transition-colors duration-300`}
+            className={cn(
+              "w-32 h-32 flex items-center justify-center transition-colors duration-300 overflow-hidden relative",
+
+              index == 0 && "w-24 h-24",
+              index == 1 && "w-[7.25rem] h-[7.25rem] scale-125",
+              index == 2 && "w-[6rem] h-[6rem]"
+            )}
           >
-            <IconComponent
-              className={`w-8 h-8 text-primary transition-colors duration-300`}
-            />
+            <Image src={service.icon} alt={service.title} fill />
           </div>
         </div>
 
