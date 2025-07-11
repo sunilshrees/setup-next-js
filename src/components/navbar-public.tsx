@@ -14,7 +14,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const NavbarPublic = () => {
   return (
-    <header className="w-full  ">
+    <header className="w-full sticky top-0 z-50">
       <div className=" bg-primary-light">
         <div className="max-w-screen-2xl mx-auto ">
           <div className="h-20 px-10 flex items-center justify-between gap-12">

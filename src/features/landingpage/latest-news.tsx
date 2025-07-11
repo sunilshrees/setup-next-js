@@ -5,9 +5,12 @@ export default function LatestNewsSection() {
   return (
     <div className="bg-[#F5F7F8]">
       <div className="max-w-screen-xl mx-auto">
-        <div className="py-8 px-4 sm:px-8 md:px-16 lg:px-24 relative overflow-hidden">
+        <div className="pt-16 pb-8 px-4 sm:px-8 md:px-16 lg:px-24 relative overflow-hidden">
           <div className="flex justify-between items-center mb-8">
-            <div>latest News , Articles</div>
+            <h2 className="text-2xl  text-primary mb-4 font-normal">
+              <span className="text-primary font-bold">Latest</span> News ,
+              Articles
+            </h2>
             <div>
               <button className="inline-flex items-center bg-white border-2 border-orange-400 text-orange-500 rounded-full px-6 py-2 hover:bg-orange-50 transition">
                 Need NDIS Care <ArrowRight className="ml-2 w-4 h-4" />

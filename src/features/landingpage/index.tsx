@@ -6,6 +6,8 @@ import ServicesSlider from "./service-section";
 import NDISProviderSection from "./NDISProvider";
 import LatestNewsSection from "./latest-news";
 import Testimonials from "./testimonials";
+import FaqSection from "./faq";
+import BenefitSection from "./benefit";
 
 const MainPage = () => {
   return (
@@ -17,6 +19,8 @@ const MainPage = () => {
       <NDISProviderSection />
       <Testimonials />
       <LatestNewsSection />
+      <FaqSection />
+      <BenefitSection />
     </div>
   );
 };
