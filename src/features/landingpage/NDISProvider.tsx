@@ -9,10 +9,9 @@ export default function NDISProviderSection() {
           <div className="h-full grid grid-cols-5 gap-8">
             {/* Text Content */}
             <div className="flex-1 bg-gray-50  rounded-[3rem] p-8 col-span-4">
-              <h2 className="text-2xl md:text-3xl font-semibold text-green-700 mb-4">
-                Looking For{" "}
-                <span className="font-bold text-green-800">NDIS</span> Providers
-                In Sydney?
+              <h2 className="text-2xl md:text-3xl font-medium text-primary mb-4">
+                Looking For <span className="font-bold text-primary">NDIS</span>{" "}
+                Providers In Sydney?
               </h2>
               <p className="text-gray-500 mb-2">
                 There Are Many Variations Of Passages Of Available But Simply
@@ -36,6 +35,11 @@ export default function NDISProviderSection() {
                   <Check className="text-green-500 w-5 h-5 mt-1" /> Becoming A
                   Registered Provider Today
                 </p>
+              </div>
+              <div className="flex justify-end items-center">
+                <button className="mt-2 px-6 py-2 border border-orange-500 text-orange-500 rounded-full hover:bg-orange-100 transition flex gap-4">
+                  Need NDIS Care <ArrowRight className="rotate-45" />
+                </button>
               </div>
 
               {/* <button className="inline-flex items-center bg-white border-2 border-orange-400 text-orange-500 rounded-full px-6 py-2 hover:bg-orange-50 transition">

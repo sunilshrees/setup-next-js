@@ -389,5 +389,5 @@ body {
 }
 
 .default-box-shadow {
-  box-shadow: 3px 4px 3px 4px var(--primary-light);
+  box-shadow: 3px 3px 3px 3px var(--primary-light);
 }

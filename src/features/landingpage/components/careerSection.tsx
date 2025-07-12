@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { ArrowRight } from "lucide-react";
 
 const CareerSection = () => {
   const containerRef = useRef(null);
@@ -73,17 +74,16 @@ const CareerSection = () => {
           animate={textControls}
           className="w-1/2 absolute right-0 top-1/3 -translate-y-1/3 pl-5"
         >
-          <h2 className="text-4xl font-bold mb-4 text-green-800">
-            Welcome To Matilda Care
+          <h2 className="text-4xl font-normal mb-4 text-primary">
+            Careers with Matilda
           </h2>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">
-            We are dedicated to empowering individuals and families by providing
-            a range of supportive services tailored to enhance well-being and
-            foster growth. Our mission is rooted in compassion, respect, and a
-            commitment to meaningful, positive outcomes.
+            Become part of the matilda team. Working with matilda is the
+            beginning of a lifelong career. Learn more about us and our current
+            vacancies.
           </p>
-          <button className="mt-2 px-6 py-2 border border-orange-500 text-orange-500 rounded-full hover:bg-orange-100 transition">
-            Know More →
+          <button className="mt-2 px-6 py-2 border border-orange-500 text-orange-500 rounded-full hover:bg-orange-100 transition flex gap-4">
+            View careers <ArrowRight className="rotate-45" />
           </button>
         </motion.div>
       </div>

@@ -58,26 +58,22 @@ const NavbarPublic = () => {
         </div>
       </div>
 
-      <div className=" bg-white">
+      <div className=" bg-white shadow-[0px_0px_4px_rgba(0,0,0,0.04),0px_4px_8px_rgba(0,0,0,0.06)]">
         <div className="max-w-screen-2xl mx-auto ">
           <div className="px-10 h-24 flex items-center justify-between">
-            <div className="w-36 aspect-video relative overflow-hidden">
-              <Image src={logo} alt="logo" fill className="object-contain" />
-            </div>
+            <Link href="/">
+              <div className="w-36 aspect-video relative overflow-hidden">
+                <Image src={logo} alt="logo" fill className="object-contain" />
+              </div>
+            </Link>
             <nav className="flex items-center gap-12 font-medium text-lg text-[#707070]">
-              <Link href="/">About us</Link>
-              <Link href="/">Services</Link>
-              <Link href="/">Accommodation</Link>
-              <Link href="/">News & Articles</Link>
-              <Link href="/">Work with us</Link>
+              <Link href="/about-us">About us</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/accomodation">Accommodation</Link>
+              <Link href="/news-and-articles">News & Articles</Link>
+              <Link href="/careers">Work with us</Link>
             </nav>
             <div className="flex items-center gap-4">
-              {/* <Button
-                variant={"outline"}
-                className="rounded-[0.75rem] px-6 py-3 !h-auto bg-primary-light border border-primary font-semibold text-primary hover:bg-primary hover:text-white"
-              >
-                Referral Form
-              </Button> */}
               <div className="relative inline-block group">
                 {/* Shadow Button */}
                 <Button
